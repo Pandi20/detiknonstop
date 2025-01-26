@@ -4,38 +4,38 @@
 // Base Page Metadata, src/layouts/BaseLayout.astro
 export const BRAND_NAME = "Detiknons.top";
 export const SITE_TITLE = "Detiknons.top";
-export const SITE_DESCRIPTION = "An Astro Theme for Visual Storytelling";
+export const SITE_DESCRIPTION = "Ringkasan berita berbasis AI dari sumber terpercaya, cepat dan praktis.";
 
 // Tags Page Metadata, src/pages/tags/index.astro
 export const Tags_TITLE = "Detiknons.top - Semua tagar";
 export const Tags_DESCRIPTION =
-  "Detiknons.top - All tags and the count of articles related to each tag";
+  "Detiknons.top - Semua tagar yang berkaitan";
 
 // Tags Page Metadata, src/pages/tags/[tag]/[page].astro
 export function getTagMetadata(tag: string) {
   return {
-    title: `All articles on '${tag}' tag in Detiknons.top`,
-    description: `Explore articles about ${tag} for different perspectives and in-depth analysis.`,
+    title: `Semua berita dengan tagar '${tag}' di Detiknons.top`,
+    description: `Jelajahi berita dengan tagar ${tag} untuk persfektif berbeda dan analisis mendalam.`,
   };
 }
 
 // Category Page Metadata, src/pages/category/[category]/[page].astro
 export function getCategoryMetadata(category: string) {
   return {
-    title: `All articles in '${category}' category in Detiknons.top`,
-    description: `Browse all articles under the ${category} category in Detiknons.top`,
+    title: `Semua berita kategori '${category}' di Detiknons.top`,
+    description: `Cari berita kategori ${category} di Detiknons.top`,
   };
 }
 
 // Header Links, src/components/Header.astro
 export const HeaderLinks = [
-  { href: "/category/One/1/", title: "One" },
-  { href: "/category/Two/1/", title: "Two" },
-  { href: "/category/Three/1/", title: "Three" },
-  { href: "/category/Four/1/", title: "Four" },
-  { href: "/category/Five/1/", title: "Five" },
-  { href: "/category/Six/1/", title: "Six" },
-  { href: "/category/Seven/1/", title: "Seven" },
+  { href: "/category/Hiburan/1/", title: "Hiburan" },
+  { href: "/category/Olahraga/1/", title: "Olahraga" },
+  { href: "/category/Teknologi/1/", title: "Teknologi" },
+  { href: "/category/Kesehatan/1/", title: "Kesehatan" },
+  { href: "/category/Ekonomi/1/", title: "Ekonomi" },
+  { href: "/category/Kriminal/1/", title: "Kriminal" },
+  { href: "/category/Sosial/1/", title: "Sosial" },
 ];
 
 // Footer Links, src/components/Footer.astro
@@ -49,15 +49,16 @@ export const SocialLinks = [
   {
     href: "https://twitter.com/inotelab",
     icon: "tabler:brand-youtube",
-    label: "Twitter",
+    label: "Youtube",
   },
   {
     href: "https://github.com/inotelab",
     icon: "tabler:brand-whatsapp",
-    label: "GitHub",
+    label: "Whatsapp",
   },
 ];
 
 // Search Page Metadata, src/pages/search.astro
-export const SEARCH_PAGE_TITLE = `${SITE_TITLE} - Site Search`;
-export const SEARCH_PAGE_DESCRIPTION = `Search all content on ${SITE_TITLE}`;
+export const SEARCH_PAGE_TITLE = `${SITE_TITLE} - Pencarian`;
+export const SEARCH_PAGE_DESCRIPTION = `Cari semua berita di ${SITE_TITLE}`;
+export const SEARCH_CONSOLE_GOOGLE='test'
